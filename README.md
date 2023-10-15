@@ -13,7 +13,7 @@ Marta Mężykowska, 08.10.2023 r.
 
 ## Spis treści
    * [Generatywna sztuczna inteligencja](#Generatywna-sztuczna-inteligencja)
-   * [BloombergGPT. AI w służbie świata finansów](#BloombergGPT.-AI-w-służbie-świata-finansów)
+   * [BloombergGPT. AI w służbie świata finansów](#BloombergGPT-.-AI-w-służbie-świata-finansów)
    * [BloombergGPT – metodologia modelu](#BloombergGPT-/–-metodologia-modelu)
    * [BloombergGPT – podsumowanie i niuanse](#BloombergGPT-/–-podsumowanie-i-niuanse)
    * [Bibliografia](#Bibliografia)
