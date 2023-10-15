@@ -10,6 +10,8 @@ As of October 2023, Polish language version of the commentary is available.
 Zapraszam do przeczytania mojej wypowiedzi na ten temat.
 Marta Mężykowska, 08.10.2023 r.
 
+![0](./Images/0.jpg)
+
 -----------------------------------------------------------------------
 
 ## Spis treści
