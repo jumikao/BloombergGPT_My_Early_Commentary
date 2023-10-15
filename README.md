@@ -5,17 +5,17 @@ As of October 2023, Polish language version of the commentary is available.
 
 --------------------------------------------------------------------------
 
-BloombergGPT – odpowiednik ChatGPT dla sektora finansowego? 
+## BloombergGPT – odpowiednik ChatGPT dla sektora finansowego? 
 Zapraszam do przeczytania mojej wypowiedzi na ten temat.
 
 -----------------------------------------------------------------------
 
-  Spis treści
-   - Generatywna sztuczna inteligencja
-   - BloombergGPT – AI w służbie świata finansów  
-   - BloombergGPT – metodologia modelu
-   - BloombergGPT – podsumowanie i niuanse
-   - Bibliografia
+## Spis treści
+   * Generatywna sztuczna inteligencja
+   * BloombergGPT – AI w służbie świata finansów  
+   * BloombergGPT – metodologia modelu
+   * BloombergGPT – podsumowanie i niuanse
+   * Bibliografia
 
 -------------------------------------------------------------------
 
