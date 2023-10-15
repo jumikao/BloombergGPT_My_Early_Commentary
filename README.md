@@ -81,6 +81,8 @@ Marta Mężykowska, 08.10.2023 r.
   Pokrótce (szczegóły Paper, str. 5-6):
   * Dane własne, w tym serwis Bloomberg (język angielski) – 77% dokumentów, finalnie 51% tokenów = 363 mld tokenów,
   *	Dane publiczne (język angielski) – 23% dokumentów,  finalnie 49% tokenów = 345 mld tokenów.
+
+![1.7](./Images/1.7.jpg)
  
   W skład danych publicznych (open source), na których trenowany został model, wybrane zostały dwa duże publiczne data sety, zwane The Pile oraz C4. Zostały one wstępnie przeprocesowane i oczyszczone przez swoich autorów, dzięki czemu są chętnie używane do uczenia nowych LLM-ów. Dodatkowo w dane publiczne włączono także świeże, nieoczyszczone dane z Wikipedii (od 1 lipca 2022 r., starsza wersja Wikipedii była już częścią The Pile oraz C4).
 
@@ -113,12 +115,16 @@ Marta Mężykowska, 08.10.2023 r.
   
 ### 1.	External Financial Tasks
   W pierwszym zagadnieniu przedstawiono wyniki z analizy zewnętrznych danych finansowych. Przykładowe zadania dla modelu: analiza sentymentu finansowej prasówki (‘financial news’), klasyfikacja binarna treści na podstawie analizy nagłówków prasowych, rozpoznawanie trzech typów encji w tekście, konwersacja z botem na temat analizy danych tabelarycznych. Sentyment określany jest jako pozytywny, negatywny lub neutralny.
+
+![2.10](./Images/2.10.jpg)
  
   W 4/5 zadań BloombergGPT okazał się najlepszy, jedynie w poleceniu dotyczącym oznaczania encji w tekście był na 2. miejscu za GPT-NeoX (aczkolwiek różnica była na tyle niewielka, iż można mówić o zbliżonych wynikach w obu modelach). Uśredniając wyniki, BloombergGPT okazał się najlepszy spośród trzech przedstawionych modeli, umiejętnie wypełniając postawione przed nim zadania dotyczące danych finansowych. Brak tu niestety odniesienia do wyników modelu GPT3.
   
 ### 2.	Internal Task: Sentiment Analysis
   
   Kolejną analizowaną kategorią była analiza sentymentu na danych własnych. Podobnie jak w poprzednim przypadku wydzielono kilka niezależnych podzadań: Equity News/Social Media/Transcript Sentiment miały na celu oszacować sentyment inwestorów na podstawie danych pochodzących z różnych źródeł medialnych, ES News Sentiment ocenę sentymentu wobec polityki socjalnej i środowiskowej firmy, a Country News Sentiment skupiał się na odpowiedzi na pytanie czy informacje prasowe świadczą o wzroście, spadku czy utrzymaniu status quo danej krajowej gospodarki (państwa).
+
+![3.10](./Images/3.10.jpg)
  
   BloombergGPT okazał się najlepiej wywiązywać z powyższych zadań w każdej ze wskazanych kategorii, w większości z nich bijąc konkurencję na głowę. Pozostałe modele okazały się wysoce skuteczne jedynie w analizie sentymentu kontentu pochodzącego z social mediów. W uśrednionym dla całej kategorii wyniku BloombergGPT również okazał się obronić wiodącą pozycję, a dwa pozostałe modele zaraportowano jako tylko w połowie tak skuteczne jak BloombergGPT. 
 
@@ -126,12 +132,16 @@ Marta Mężykowska, 08.10.2023 r.
 
 ### 3.	Exploratory task: NER (+joined NER+NED analysis) 
   Do analizy encji (NER) wybrano siedem różnych zestawów danych pochodzących ze źródeł wewnętrznych Bloomberga z lat 2016-2021. Zdecydowano się na oznaczanie trzech podstawowych rodzajów encji: ORG (ang. „Organization” - organizacja), PER (ang. „Person” - osoba), LOC (ang. „Location” - lokalizacja). Dla dalszego ułatwienia, usunięto z analizy dokumenty, w których nie było żadnych powyższych encji. 
+
+![4.11](./Images/4.11.jpg)
  
   Wyniki BloombergGPT nie były tym razem oszałamiające. Model okazał się najlepszy tylko w 1. na 7. zadań, a w 4. zadaniach zajął 2-gie miejsce, mimo, iż analizowane były wewnętrzne dane firmy, wcześniej odpowiednio przeprocesowane przez jej pracowników. Ranking skuteczności w tej kategorii zdecydowanie zdominował największy model Bloom, prowadząc w 6. na 7. zadaniach.
 
   Firma opublikowała także rozszerzoną wersję tejże analizy: NER+NED*. 
 
   (*NED – ang. „Named entity disambiguation”, „entity linking”, oznacza analizę encji z uwzględnieniem, iż encje są osadzone w pewnej wspólnej bazie danych – np. jak dane w Wikipedii - w pewnym „otoczeniu”. Dostępność tego „otoczenia” zdecydowanie ułatwia znalezienie odpowiedniego kontekstu i przypisanie podmiotu do właściwej encji na zasadzie wyboru odpowiedzi wynikającej z najwyższego prawdopodobieństwa wynikającego z współistnienia z innymi wpisami do bazy. Dla zobrazowania, analizując wyrażenie „Samolot LOT-u awaryjnie ląduje w Warszawie”, w ramach NER oznaczone zostaną LOT jako „ORG”, a Warszawa jako „LOC”; w ramach NER+NED uzyskane zostaną bardziej szczegółowe informacje, takie jak LOT = „ORG” oraz LOT = polskie linie lotnicze PLL „LOT” SA, Warszawa = „LOC” oraz Warszawa = miasto stołeczne Warszawa). 
+
+![5.11](./Images/5.11.jpg)
 
   Wyniki analizy NER+NED są zdecydowanie bardziej korzystne dla modelu BloombergGPT. Zgodnie z publikacją BloombergGPT uzyskał pierszeństwo w 6. na 7. zadań. Można powiedzieć, że możliwość wskazania otoczenia dla encji pozwoliła na uwolnienie potencjału modelu, czego nie mogliśmy powiedzieć o samej analizie NER.
 
@@ -154,6 +164,8 @@ Marta Mężykowska, 08.10.2023 r.
   BIG-bench Hard (skrót. BBH) jest dobrze znanym w środowisku zestawem zadań testowych dla modeli sztucznej inteligencji, który narodził jako selekcja 23 najtrudniejszych zadań z listy ponad 200 zadań funkcjonujących jako „BIG-bench”. Charakteryzuje się wysokim poziomem złożoności i reprezentuje te zadania, co do których dotychczasowe modele językowe miały problem z osiągnięciem wyników przewyższających przeciętnego ludzkiego ankietera. Zadania z puli BBH pokrywają następujące zagadnienia: zadania z zakresu arytmetyki i algebry matematycznej, rozumienie języka naturalnego (NLP), rozumienie i udzielanie odpowiedzi na pytania z wiedzy ogólnej oraz tłumaczenia językowe (szczegóły Paper, str. 26).   
 
   Zgodnie ze słowami autorów publikacji testowanie BloombergGPT na zestawie BBH ma na celu wykazanie przydatności modelu w przypadku zadań ogólnych (ang. „general purpose”). BloombergGPT został przetestowany na wszystkich 23 zadaniach, a jego wyniki porównane z trzema wcześniej wskazanymi modelami językowymi, plus dodatkowo odniesiono się do opublikowanych publicznie wyników modelu PaLM z tego zakresu. W tej kategorii nie zaprezentowano porównania do modelu GPT3.
+
+![6.13](./Images/6.13.jpg)
  
   Ranking wyników otwierają model PaLM i Bloom, co nie dziwi biorąc pod uwagę fakt, iż statystycznie rzecz biorąc większe modele osiągały lepsze rezultaty w zadaniach BIG-bench Hard niż te mniejsze. BloombergGPT okazał się nieco lepszy od dwóch pozostałych modeli GPT-NeoX oraz OPT, czyli modeli o podobnej wielkości i ilości parametrów oraz lekko w tyle za modelem Bloom. Jego osiągnięcia w stosunku do modelu Palm były już wyraźnie niższe. Wyniki te miały swoje odwzorowanie zarówno w ogólnym podsumowaniu, jak i w podziale na zadania z dziedziny NLP i arytmetyczne. 
 
@@ -164,8 +176,12 @@ Marta Mężykowska, 08.10.2023 r.
   Kolejna kategoria analizy danych skupia się na zjawisku znanym jako „closed-book question answering”. W skrócie oznacza ono zdolność modelu do odpowiedzi na pytania dotyczące wiedzy, która została mu przedstawiona w trakcie treningu, lecz bez możliwości posiłkowania się zewnętrznymi źródłami danych w momencie odpowiedzi na pytanie. Coś jak „szkolna klasówka”, do której trzeba było się przygotować przed sprawdzianem, a w jego trakcie nie korzystać z żadnych dodatkowych pomocy. W tym przypadku, modele otrzymywały pytania wraz z zestawem odpowiedzi wielokrotnego wyboru i miały spośród nich wskazać tą właściwą.
 
   Modele testowane były z zakresu znajomości i rozumienia wiedzy ogólnej, w tym zarówno dotyczących tematów naukowych, jak i wynikających z tzw. „zdrowego rozsądku” (ang. „commonsense questions”). W tym celu wykorzystane dostępne publicznie zestawy danych specjalizujące się w tych zagadnieniach. Co ciekawe, częściowo dostępne są także rezultaty modelu GPT-3 w tym zakresie, które zostały przedstawione w analizie porównawczej (szczegóły Paper, str. 28).
+
+![7.14](./Images/7.14.jpg)
  
   BloombergGPT uzyskał w tej kategorii wyniki nieco lepsze od modeli GPT-NeoX oraz OPT, a także zbliżone lub wręcz porównywalne do znacznie większego modelu Bloom, co jest sporym sukcesem. Interesujące jest także porównanie BloombergGPT do modelu GPT-3: w 2 na 3 przypadkach GPT-3 wypadał lepiej, lecz BloombergGPT nie odstawał mocno. 
+
+![8.14](./Images/8.14.jpg)
  
   Ciekawe są rezultaty BloombergGPT szczególnie w ramach jednego ze zbiorów danych zwanego MMLU (ang. Measuring Massive Multitask Language Understanding), gdzie przedstawiono dane i wyniki w podziale na różne dziedziny nauki (tabela powyżej), .Warto zwrócić uwagę, iż w kategorii „STEM” (ang. skrót od „Science, Technology, Engineering, Mathematics”, czyli nauki ścisło-przyrodniczo-techniczne, do których zaliczają się także finanse i rachunkowość) rezultaty BloombergGPT, Bloom i GPT-3 były bardzo zbliżone. 
 
@@ -174,12 +190,16 @@ Marta Mężykowska, 08.10.2023 r.
 ### 6.	Reading Comprehension
 
   Sekcja ta obrazuje umiejętność modeli w rozumieniu tekstu i generowaniu dla użytkownika prawidłowej odpowiedzi na podstawie informacji w nim zawartych.  Kategoria ta dopuszczała różne formy interakcji z modelem, a jako możliwe odpowiedzi pojawiały się pytania zamknięte jedno- i wielokrotnej odpowiedzi oraz tak/nie. Dane wsadowe były bardzo różnorodne, począwszy od Wikipedii, przez wiedzę wczesnoszkolną, po wiadomości prasowe. Ponownie mamy możliwość odnieść osiągnięcia modeli do modelu GPT-3.
+
+![9.15](./Images/9.15.jpg)
  
   GPT-3 bez zaskoczenia ponownie okazał się zająć pierwszą pozycję w rankingu wyników,  jednak w tym zestawieniu BloombergGPT zajął zdecydowane, drugie miejsce, okazując się dużo skuteczniejszym modelem od Bloom, GPT-NeoX i OPT, znacznie wyprzedzając wszystkie trzy z nich. Można by zaryzykować stwierdzenie, iż trenowany w znaczącej części na newsach i krótkich tekstach informacyjnych model Bloomberga dobrze radzi sobie w wyłuskiwaniu z nich najważniejszych informacji i wskazaniu najbardziej prawdopodobnych odpowiedzi na pytania zamknięte. 
 
 ### 7.	Linguistic Tasks
 
   Ostatnia z analizowanych kategorii skupia się wyjątkowo mocno na języku naturalnym jako takim, tj. składni języka, wyszukiwaniu błędów i nieścisłości gramatycznych w generowanym tekście oraz doboru słów do znaczenia i kontekstu. Podkategorie miały za zadanie sprawdzenie, czy model rozumie pokazywany mu tekst, czy sam potrafi zasugerować najlepiej pasujący do niego synonim lub wyrażenie podsumowujące, czy umie poruszać się w obszarze wyrażeń wieloznacznych, a także czy jest w stanie wnioskować na podstawie analizowanego języka naturalnego o naruszeniu cyberbezpieczeństwa (szczegóły Paper, str. 29). 
+
+![10.15](./Images/10.15.jpg)
  
   Sumaryczna analiza pokazuje, iż wszystkie modele poradziły sobie z tymi zadaniami dobrze i różnice w wynikach nie były dramatyczne. Korzystając z możliwości odniesienia rezultatów do publicznych wyników modelu GPT-3, widać było jego wiodącą pozycję, jednak model BloombergGPT wypadał tylko nieznacznie gorzej, a w kilku podkategoriach nawet lepiej niż GPT-3. Modele Bloom, GPT-NeoX i OPT były tuż za nimi, utrzymując również wysoką pozycję i skuteczność w realizacji przedstawionych zadań. 
 
