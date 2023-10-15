@@ -108,12 +108,12 @@ Marta Mężykowska, 08.10.2023 r.
 
   F1 score to kompleksowy wskaźnik, który łączy w sobie uśrednione informacje na temat precyzji i czułości modelu. Metryka ta przekazuje jednocześnie informacje z dwóch zagadnień: ile punktów zdobył model z poprawnego wskazania Andrzeja Dudy jako prezydenta Polski na ilość razy kiedy wskazał prezydenta ogółem (poprawnie i niepoprawnie) oraz ile razy model NIE wykrył poprawnego wskazania Andrzeja Dudy jako prezydenta. Dzięki temu możemy nie tylko stwierdzić jak dobry jest model we właściwym wskazywaniu poprawnych informacji, ale także nasza ocena zawiera poziom ryzyka, które wiąże się z nierozpoznaniem ważnej informacji. Im wyższa miara F1 score, tym lepszy model.  
   
-  ### 1.	External Financial Tasks
+### 1.	External Financial Tasks
   W pierwszym zagadnieniu przedstawiono wyniki z analizy zewnętrznych danych finansowych. Przykładowe zadania dla modelu: analiza sentymentu finansowej prasówki (‘financial news’), klasyfikacja binarna treści na podstawie analizy nagłówków prasowych, rozpoznawanie trzech typów encji w tekście, konwersacja z botem na temat analizy danych tabelarycznych. Sentyment określany jest jako pozytywny, negatywny lub neutralny.
  
   W 4/5 zadań BloombergGPT okazał się najlepszy, jedynie w poleceniu dotyczącym oznaczania encji w tekście był na 2. miejscu za GPT-NeoX (aczkolwiek różnica była na tyle niewielka, iż można mówić o zbliżonych wynikach w obu modelach). Uśredniając wyniki, BloombergGPT okazał się najlepszy spośród trzech przedstawionych modeli, umiejętnie wypełniając postawione przed nim zadania dotyczące danych finansowych. Brak tu niestety odniesienia do wyników modelu GPT3.
   
-  ### 2.	Internal Task: Sentiment Analysis
+### 2.	Internal Task: Sentiment Analysis
   
   Kolejną analizowaną kategorią była analiza sentymentu na danych własnych. Podobnie jak w poprzednim przypadku wydzielono kilka niezależnych podzadań: Equity News/Social Media/Transcript Sentiment miały na celu oszacować sentyment inwestorów na podstawie danych pochodzących z różnych źródeł medialnych, ES News Sentiment ocenę sentymentu wobec polityki socjalnej i środowiskowej firmy, a Country News Sentiment skupiał się na odpowiedzi na pytanie czy informacje prasowe świadczą o wzroście, spadku czy utrzymaniu status quo danej krajowej gospodarki (państwa).
  
@@ -121,7 +121,7 @@ Marta Mężykowska, 08.10.2023 r.
 
   Ważną w kontekście tak dobrych wyników modelu BloombergGPT informacją jest, iż autorzy publikacji mówią wprost, iż część danych treningowych w tej kategorii pokrywała się z częścią danych testowych. Wśród danych testowych (FinPile) dane te nie były oznakowane, nie zmienia to jednak faktu, iż jeśli model w fazie oceny efektywności trafił na taką próbkę danych, dokładnie wiedział jak się wobec niej ustosunkować. Skala problemu nie jest podana. Niestety w moich oczach podważa to wiarygodność uzyskanych wyników i nie daje gwarancji, że model sprawdzi się w przypadku świeżych danych, czyli tych, z którymi nie miał jeszcze do czynienia. W konsekwencji nie można stwierdzić, czy tak wysoka przewaga BloombergGPT nad innymi modelami w analizie sentymentu wynikała rzeczywiście wyłącznie z wyższej skuteczności modelu czy też wyniki te są sztucznie zawyżone. W danej kategorii brak odniesienia do modelu GPT3.
 
-  ### 3.	Exploratory task: NER (+joined NER+NED analysis) 
+### 3.	Exploratory task: NER (+joined NER+NED analysis) 
   Do analizy encji (NER) wybrano siedem różnych zestawów danych pochodzących ze źródeł wewnętrznych Bloomberga z lat 2016-2021. Zdecydowano się na oznaczanie trzech podstawowych rodzajów encji: ORG (ang. „Organization” - organizacja), PER (ang. „Person” - osoba), LOC (ang. „Location” - lokalizacja). Dla dalszego ułatwienia, usunięto z analizy dokumenty, w których nie było żadnych powyższych encji. 
  
   Wyniki BloombergGPT nie były tym razem oszałamiające. Model okazał się najlepszy tylko w 1. na 7. zadań, a w 4. zadaniach zajął 2-gie miejsce, mimo, iż analizowane były wewnętrzne dane firmy, wcześniej odpowiednio przeprocesowane przez jej pracowników. Ranking skuteczności w tej kategorii zdecydowanie zdominował największy model Bloom, prowadząc w 6. na 7. zadaniach.
@@ -146,7 +146,7 @@ Marta Mężykowska, 08.10.2023 r.
 
   Na tym przykładzie można odnieść wrażenie, iż Bloomberg priorytetuje informacje dotyczące podmiotów z sektora dużych przedsiębiorstw notowanych na giełdzie. Z jednej strony wydaje się to logiczne, ponieważ Bloomberg Terminal jest narzędziem nastawionym na inwestorów giełdowych. Z drugiej jednak strony, oznaczenie dużych firm mogło być łatwiejszym zadaniem dla modelu ze względu na ich częstsze występowanie w relacjach prasowych oraz występowanie punktu odniesienia w „wewnętrznej bazie” Bloomberga, czyli Bloomberg Terminal. W przypadku mniejszych firm lub pominiętych encji takich jak lokalizacja czy personalia, BloombergGPT mógłby uzyskać gorsze wyniki i słabiej wypaść na tle innych modeli, takie analizy nie zostały jednak skomentowane w publikacji. W danej kategorii nie zostały przedstawione wyniki modelu GPT3.
 
-  ### 4.	BIG-bench Hard
+### 4.	BIG-bench Hard
 
   BIG-bench Hard (skrót. BBH) jest dobrze znanym w środowisku zestawem zadań testowych dla modeli sztucznej inteligencji, który narodził jako selekcja 23 najtrudniejszych zadań z listy ponad 200 zadań funkcjonujących jako „BIG-bench”. Charakteryzuje się wysokim poziomem złożoności i reprezentuje te zadania, co do których dotychczasowe modele językowe miały problem z osiągnięciem wyników przewyższających przeciętnego ludzkiego ankietera. Zadania z puli BBH pokrywają następujące zagadnienia: zadania z zakresu arytmetyki i algebry matematycznej, rozumienie języka naturalnego (NLP), rozumienie i udzielanie odpowiedzi na pytania z wiedzy ogólnej oraz tłumaczenia językowe (szczegóły Paper, str. 26).   
 
@@ -156,7 +156,7 @@ Marta Mężykowska, 08.10.2023 r.
 
   Patrząc na BloombergGPT z perspektywy ogółu modeli można zauważyć, iż wypada przeciętnie w stosunku w kategorii zadań ogólnego przeznaczenia, z drugiej jednak strony warto podkreślić, iż jako model branżowy o innej specjalizacji w dalszym ciągu dotrzymuje kroku modelom o podobnej wielkości w tej kategorii.
 
-  ### 5.	Knowledge Assessments
+### 5.	Knowledge Assessments
 
   Kolejna kategoria analizy danych skupia się na zjawisku znanym jako „closed-book question answering”. W skrócie oznacza ono zdolność modelu do odpowiedzi na pytania dotyczące wiedzy, która została mu przedstawiona w trakcie treningu, lecz bez możliwości posiłkowania się zewnętrznymi źródłami danych w momencie odpowiedzi na pytanie. Coś jak „szkolna klasówka”, do której trzeba było się przygotować przed sprawdzianem, a w jego trakcie nie korzystać z żadnych dodatkowych pomocy. W tym przypadku, modele otrzymywały pytania wraz z zestawem odpowiedzi wielokrotnego wyboru i miały spośród nich wskazać tą właściwą.
 
@@ -168,13 +168,13 @@ Marta Mężykowska, 08.10.2023 r.
 
   W tej kategorii pozycja BloombergGPT jako modelu branżowego, którego główne zainteresowanie oscyluje wokół zagadnień finansowych, wydaje się być wysoka.
 
-  ### 6.	Reading Comprehension
+### 6.	Reading Comprehension
 
   Sekcja ta obrazuje umiejętność modeli w rozumieniu tekstu i generowaniu dla użytkownika prawidłowej odpowiedzi na podstawie informacji w nim zawartych.  Kategoria ta dopuszczała różne formy interakcji z modelem, a jako możliwe odpowiedzi pojawiały się pytania zamknięte jedno- i wielokrotnej odpowiedzi oraz tak/nie. Dane wsadowe były bardzo różnorodne, począwszy od Wikipedii, przez wiedzę wczesnoszkolną, po wiadomości prasowe. Ponownie mamy możliwość odnieść osiągnięcia modeli do modelu GPT-3.
  
   GPT-3 bez zaskoczenia ponownie okazał się zająć pierwszą pozycję w rankingu wyników,  jednak w tym zestawieniu BloombergGPT zajął zdecydowane, drugie miejsce, okazując się dużo skuteczniejszym modelem od Bloom, GPT-NeoX i OPT, znacznie wyprzedzając wszystkie trzy z nich. Można by zaryzykować stwierdzenie, iż trenowany w znaczącej części na newsach i krótkich tekstach informacyjnych model Bloomberga dobrze radzi sobie w wyłuskiwaniu z nich najważniejszych informacji i wskazaniu najbardziej prawdopodobnych odpowiedzi na pytania zamknięte. 
 
-  ### 7.	Linguistic Tasks
+### 7.	Linguistic Tasks
 
   Ostatnia z analizowanych kategorii skupia się wyjątkowo mocno na języku naturalnym jako takim, tj. składni języka, wyszukiwaniu błędów i nieścisłości gramatycznych w generowanym tekście oraz doboru słów do znaczenia i kontekstu. Podkategorie miały za zadanie sprawdzenie, czy model rozumie pokazywany mu tekst, czy sam potrafi zasugerować najlepiej pasujący do niego synonim lub wyrażenie podsumowujące, czy umie poruszać się w obszarze wyrażeń wieloznacznych, a także czy jest w stanie wnioskować na podstawie analizowanego języka naturalnego o naruszeniu cyberbezpieczeństwa (szczegóły Paper, str. 29). 
  
