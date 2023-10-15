@@ -205,6 +205,8 @@ Marta Mężykowska, 08.10.2023 r.
 
   Podsumowując opublikowane przez firmę Bloomberg wyniki skuteczności modelu BloombergGPT oraz biorąc pod uwagę powyższe zastrzeżenia, warto obserwować co będzie dalej działo się z tym modelem oraz kiedy firma zdecyduje się na jego finalne wdrożenie (lub możliwość przetestowania przez niezależne podmioty). Bloomberg deklaruje podjęcie kolejnych kroków i rozbudowę BloombergGPT o kolejne funkcjonalności, a także być może wprowadzenie zmian w samym modelu, jeśli pojawią się ku temu przekonujące przesłanki rynkowe. Informacja o powstaniu pierwszego tak dużego branżowego modelu machine learningowego z obszaru finansów wydała mi się bardzo interesująca, jednak w obecnej sytuacji mamy zdecydowanie za mało danych by realnie ocenić możliwości i przyszłość BloombergGPT. Być może w przyszłości granica między modelami branżowymi, a tymi ogólnego przeznaczenia zupełnie się zatrze? Pozostaje wyczekiwać na kolejne newsy i komentarze ze świata AI na ten temat. 
 
+-------------------------------------------------------------------
+
   Mam nadzieję, że moja wypowiedź na temat BloombergGPT była dla Ciebie ciekawa i skłoniła Cię do zainteresowania tym tematem. Jeśli dotarłeś do końca, proszę zostaw like lub komentarz, będzie mi bardzo miło, że doceniasz moją pracę. Z chęcią poznam także inne spojrzenia na ten temat.
 
 
@@ -212,7 +214,7 @@ Marta Mężykowska, 08.10.2023 r.
 
 ## Bibliografia
 
-  * „Introducing BloombergGPT, Bloomberg’s 50-billion parameter large language model, purpose-built from scratch for finance”, March 30, 2023, Bloomberg.com (https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/ )
+  * „Introducing BloombergGPT, Bloomberg’s 50-billion parameter large language model, purpose-built from scratch for finance”, March 30th 2023 (V1) and May 9th 2023 (V2), Bloomberg.com (https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/ )
   * „BloombergGPT: A Large Language Model for Finance”, praca zbiorowa, v1: 30.03.2023, v2: 09.05.2023, arxiv.org/ (https://arxiv.org/abs/2303.17564 )
   * „BloombergGPT: A Large Language Model for Finance”, 02.05.2023, Hudson&Thames, youtube.com (https://www.youtube.com/watch?v=FxMDrHnKWnk )
   * “BloombergGPT: How We Built a 50 Billion Parameter Financial Language Model”, 13.06.2023, Toronto Machine Learning Series (TMLS), youtube.com (https://www.youtube.com/watch?v=m2Scj2SO85Y )
