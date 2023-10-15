@@ -33,7 +33,7 @@ Marta Mężykowska, 08.10.2023 r.
 
 -------------------------------------------------------------------
 
-## BloombergGPT – AI w służbie świata finansów
+## BloombergGPT AI w służbie świata finansów
 
   Tymczasem obok starcia na szczycie, nieco w cieniu, dzieją się równie ciekawe rzeczy. A mianowicie powstają wyspecjalizowane modele językowe, oparte na sztucznej inteligencji, dostosowane dla konkretnych branż i odbiorców. Czy możemy jednak liczyć na dokładne odwzorowanie modelu biznesowego firm pokroju OpenAI czy Google w tym zakresie? O tym poniżej.
 
@@ -63,7 +63,7 @@ Marta Mężykowska, 08.10.2023 r.
 
 -------------------------------------------------------------------
 
-## BloombergGPT – metodologia modelu
+## BloombergGPT metodologia modelu
 
   W publikacji (Paper, od str. 11) możemy dowiedzieć się wielu szczegółów na temat założeń i metodologii towarzyszących tworzeniu modelu BloombergGPT.  Kilka najważniejszych przedstawiam poniżej.
 
@@ -183,11 +183,41 @@ Marta Mężykowska, 08.10.2023 r.
 
 -------------------------------------------------------------------
 
-## BloombergGPT – podsumowanie i niuanse
+## BloombergGPT podsumowanie i niuanse
+
+  Przechodząc do podsumowania mojej wypowiedzi na temat BloombergGPT, warto zacząć od zwrócenia uwagi na kilka podstawowych kwestii różniących go od innych modeli uczenia maszynowego dostępnych na rynku.
+
+  Istotną różnicą między chociażby ChatGPT czy Bard, a BloombergGPT jest dostępność językowa. Otóż BloombergGPT był trenowany jedynie na danych w języku angielskim, a co za tym może być obsługiwany także jedynie w języku angielskim – tylko takie komunikaty będzie generował i tylko takie treści może przetwarzać. Stwarza to jasne ograniczenia zarówno dla modelu, jak i dla użytkownika. Z pewnością wiele informacji o tym, co dzieje się w gospodarkach lokalnych nie dotrze do serwisu, bądź też zrobi to ze sporym opóźnieniem w stosunku do momentu wystąpienia w poszczególnych krajach. Z drugiej strony, model wymaga od użytkownika biegłej znajomości języka angielskiego. Serwis Bloomberg i Bloomberg Terminal posiadają kilka wersji językowych poza angielską, stąd też może to zadowolić tylko część użytkowników, gdyż reszta z nich może być przyzwyczajona do lokalnych ustawień lub nie znać na tyle dobrze języka obcego. ChatGPT obsługuje ponad 50 języków z całego świata (w tym polski), różnica jest więc ogromna.
+
+  Po drugie, firma Bloomberg nie ma intencji upublicznienia dostępu do swojego modelu, jak zrobiły to OpenAI czy Google. W swojej publikacji (Paper) firma w sposób bardzo szczegółowy i profesjonalny krok po kroku opisuje założenia modelu, jego parametry i funkcjonalności, przechodząc finalnie do wyników i obszernej bibliografii. Można powiedzieć, iż czytelnik jest „przeprowadzony za rękę” przez wszystkie etapy tworzenia modelu oraz decyzje podejmowane na każdym z nich. Publikacja to 40. stron tekstu (nie licząc bibliografii), dlatego też mimo, iż jest ona pierwszą tak obszerną zapowiedzią modelu BloombergGPT,  z pewnością zainteresuje ona nie tylko profesjonalistów z obszaru biznesu, ale także osoby związane z zagadnieniami machine learningu jako takimi. Firma wskazuje, iż publikacja została udostępniona w takiej formie dla szeroko pojętych celów naukowych oraz nie zdecyduje się na upublicznienie modelu ze względu na ryzyko wycieku danych i ich modelu biznesowego. 
+
+  Nie mniej jednak, takie postawienie sprawy niesie za sobą kilka ważnych konsekwencji. 
+  
+  Pierwsza z nich to ograniczony dostęp do BloombergGPT, który możliwy będzie tylko dla klientów subskrypcyjnych, a nie jak w przypadku ChatGPT czy Bard w systemie open source. Oczywiście firma prywatna ma prawo do komercjalizacji wyników swojej pracy i nic dziwnego w tym, że chce podnieść jakość usług dla swoich klientów, którzy za nie płacą. Firma OpenAI czy Google udostępniając swój model również zrobiła to mając na względzie określone dla siebie korzyści, a nie „pro publico bono”. Jednak dla części zainteresowanych zagadnieniami finansowymi osób może to być budząca niezadowolenie informacja.
+
+  Ważną kwestią jest także, iż na razie nie mogą przetestować BloombergGPT nawet klienci subskrypcyjni, ponieważ firma Bloomberg udostępniła jedynie informację, iż rozwija taki model oraz trochę szczegółów na jego temat. Może to być zaskoczenie dla osób, które tylko pobieżnie zainteresowały się rezultatami publikacji Bloomberga, gdyż odnosząc się tylko do obszernych publikacji prasowych na temat BloombergGPT można było odnieść wrażenie, iż model już został wdrożony z sukcesem. 
+
+  Zapowiedź w takiej formie wywołuje świetny efekt PR-owy zarówno dla firmy Bloomberg, jak i modelu BloombergGPT. Autorzy pomysłu mogą być odebrani jako firma nowatorska i zaawansowana technologicznie, a w branży finansów jako wręcz lider technologiczny. Biorąc pod uwagę, iż firma Bloomberg od dłuższego czasu rozwija filar doradztwa biznesowego i technologicznego, pokazując, iż ma szerokie doświadczenie w pracy z zagadnieniami z zakresu machine learningu, w sposób naturalny wysyła do potencjalnych klientów komunikat, iż z chęcią skonsultuje lub stworzy takie rozwiązania dostosowane do ich potrzeb i ma do tego solidne fundamenty. Firma chce być także rozpoznawalna jako interesujący pracodawca dla pracowników z obszaru IT (świadczy o tym chociażby informacja o prowadzonych rekrutacjach, znajdująca się na ostatnim slajdzie prezentacji firmy Bloomberg dotyczącej BloombergGPT). Jednocześnie przedsiębiorstwo otwiera się na dyskusję na temat swojego modelu uczenia maszynowego oraz możliwych do zastosowania w nim zmian i ulepszeń, dzięki czemu może czerpać z wiedzy, doświadczenia i zainteresowania innych specjalistów z branży AI. W tym samym czasie, Bloomberg nie daje nikomu w zamian dostępu do korzystania czy przetestowania swojego modelu, a więc możliwości wykrycia nieścisłości czy  niedociągnięć lub skopiowania ciekawych rozwiązań; wszystkie ewentualne zagadnienia pozostają w sferze teoretycznej akademickiej dyskusji, która jest możliwa tylko w odniesieniu do wyników publikacji. Z każdej strony sytuacja wygląda na wygraną dla informacyjnego giganta. Bardzo sprytne rozwiązanie, w którym Bloomberg osiąga rozgłos i feedback, bez wystawienia się na realną krytykę. 
+
+  Ostatniemu poruszonemu zagadnieniu chciałabym poświęcić więcej uwagi. Pomimo obszernej publikacji i znakomitej retoryki, nie sposób nie zauważyć, iż ograniczona dla BloombergGPT skala porównawcza oraz możliwość oparcia się jedynie na wybranych wynikach zaprezentowanych przez firmę Bloomberg nie dają obiektywnego obrazu funkcjonalności i zaawansowania modelu, choć wyglądają zachęcająco. Do popularności ChatGPT i zdobycia przez niego zaufania użytowników przyczyniła się możliwość przetestowania modelu przez każdego, w każdych warunkach i na każdy temat oraz iż zasadniczo te wyniki okazywały się dość dobre, a z czasem coraz lepsze. W tej sytuacji niebezzasadnie można by się zastanawiać: a co gdyby do poszczególnych testów BloombergGPT zmieniona została liczba prób („shot-prompts”)? Co gdyby lekko zmodyfikować przedstawione zadanie? Co gdyby zapytać model o coś innego, w inny sposób lub zażądać bardziej kompleksowej wypowiedzi na dany temat? Gdyby uwzględnić inne metryki skuteczności modelu? Lub przede wszystkim przetestować go na innych danych niż te z wewnętrznej bazy Bloomberga, zwłaszcza tych finansowych? Czy model zachowałby się tak samo dobrze i czy wypadłby równie dobrze na tle konkurencji? A co gdyby w porównaniu uwzględnić jeszcze inne modele uczenia maszynowego, czy od nich też byłby lepszy? Te i inne pytania odbiją się echem bez odpowiedzi, a potencjalnych użytkowników BloombergGPT powinny pozostawić z lekko ostudzonym zapałem i sporą dozą dystansu do zapewnień opublikowanych w Internecie. 
+
+  Część komentatorów wskazuje także na dość kuriozalny zbieg okoliczności, iż Bloomberg wykorzystał darmowy open source’owy model Bloom oraz publiczne zbiory danych do stworzenia własnego, w pełni komercyjnego i zastrzeżonego produktu oraz iż do tej pory nie zdecydował się na udostępnienie chociażby części FinPile.  Te ustrukturyzowane dane własne, które posłużyły do trenowania modelu BloombergGPT, mogłyby przysłużyć się do rozwoju innych modeli o podobnej tematyce (wszak publikacja o BloombergGPT miała mieć „charakter naukowy”). Summa summarum nikt jednak granic prawa nie przekroczył, a firma Bloomberg wykorzystała 1.3 Million godzin GPU w trakcie trenowania BloombergGPT, na co zgodnie z szacunkami mogła przeznaczyć budżet od 1 do 2,7 mln dolarów (niższa cena odnosiłaby się do sytuacji, w której wykorzystano by tzw. „spot-pricing”, czyli wcześniejszą rezerwację zasobów technologicznych do trenowania modelu, wyższa, gdyby moc obliczeniowa była kupowana na bieżąco po zwyczajowych cenach). Dziwnym byłoby, gdyby firma z otoczenia biznesowego, dokonując inwestycji o tej wielkości, chętnie dzieliła się swoimi zasobami i know-how, zwłaszcza u progu 4. rewolucji przemysłowej. Nie mniej jednak społeczność zainteresowana rozwojem AI w formule open source może czuć się lekko rozczarowana. 
+
+  Podsumowując opublikowane przez firmę Bloomberg wyniki skuteczności modelu BloombergGPT oraz biorąc pod uwagę powyższe zastrzeżenia, warto obserwować co będzie dalej działo się z tym modelem oraz kiedy firma zdecyduje się na jego finalne wdrożenie (lub możliwość przetestowania przez niezależne podmioty). Bloomberg deklaruje podjęcie kolejnych kroków i rozbudowę BloombergGPT o kolejne funkcjonalności, a także być może wprowadzenie zmian w samym modelu, jeśli pojawią się ku temu przekonujące przesłanki rynkowe. Informacja o powstaniu pierwszego tak dużego branżowego modelu machine learningowego z obszaru finansów wydała mi się bardzo interesująca, jednak w obecnej sytuacji mamy zdecydowanie za mało danych by realnie ocenić możliwości i przyszłość BloombergGPT. Być może w przyszłości granica między modelami branżowymi, a tymi ogólnego przeznaczenia zupełnie się zatrze? Pozostaje wyczekiwać na kolejne newsy i komentarze ze świata AI na ten temat. 
+
+  Mam nadzieję, że moja wypowiedź na temat BloombergGPT była dla Ciebie ciekawa i skłoniła Cię do zainteresowania tym tematem. Jeśli dotarłeś do końca, proszę zostaw like lub komentarz, będzie mi bardzo miło, że doceniasz moją pracę. Z chęcią poznam także inne spojrzenia na ten temat.
+
 
 -------------------------------------------------------------------
 
 ## Bibliografia
+
+  * „Introducing BloombergGPT, Bloomberg’s 50-billion parameter large language model, purpose-built from scratch for finance”, March 30, 2023, Bloomberg.com (https://www.bloomberg.com/company/press/bloomberggpt-50-billion-parameter-llm-tuned-finance/ )
+  * „BloombergGPT: A Large Language Model for Finance”, praca zbiorowa, v1: 30.03.2023, v2: 09.05.2023, arxiv.org/ (https://arxiv.org/abs/2303.17564 )
+  * „BloombergGPT: A Large Language Model for Finance”, 02.05.2023, Hudson&Thames, youtube.com (https://www.youtube.com/watch?v=FxMDrHnKWnk )
+  * “BloombergGPT: How We Built a 50 Billion Parameter Financial Language Model”, 13.06.2023, Toronto Machine Learning Series (TMLS), youtube.com (https://www.youtube.com/watch?v=m2Scj2SO85Y )
+  * “Gideon Mann: BloombergGPT: A Large Language Model for Finance”, 01.08.2023, Inside Bloomberg, youtube.com (https://www.youtube.com/watch?v=dn3j3Ba7Dvc&t=25s )
+
 
 
 
