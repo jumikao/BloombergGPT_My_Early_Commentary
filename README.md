@@ -19,23 +19,23 @@ Zapraszam do przeczytania mojej wypowiedzi na ten temat.
 
 -------------------------------------------------------------------
 
-##Generatywna sztuczna inteligencja
+## Generatywna sztuczna inteligencja
 
 -------------------------------------------------------------------
 
-##BloombergGPT – AI w służbie świata finansów
+## BloombergGPT – AI w służbie świata finansów
 
 -------------------------------------------------------------------
 
-##BloombergGPT – metodologia modelu
+## BloombergGPT – metodologia modelu
 
 -------------------------------------------------------------------
 
-##BloombergGPT – podsumowanie i niuanse
+## BloombergGPT – podsumowanie i niuanse
 
 -------------------------------------------------------------------
 
-##Bibliografia
+## Bibliografia
 
 
 
