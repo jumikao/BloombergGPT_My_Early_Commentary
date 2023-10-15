@@ -11,7 +11,7 @@ Zapraszam do przeczytania mojej wypowiedzi na ten temat.
 -----------------------------------------------------------------------
 
   Spis treści
-- Generatywna sztuczna inteligencja
+    Generatywna sztuczna inteligencja
 - BloombergGPT – AI w służbie świata finansów
 - BloombergGPT – metodologia modelu
 - BloombergGPT – podsumowanie i niuanse
